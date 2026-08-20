@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Cardio Study Hub — plataforma pessoal para estudo de Marcapasso e Eletrofisiologia com inglês técnico." />
+  <title>Cardio Study Hub</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <button class="brand brand-button" data-route="home" aria-label="Voltar ao início">
+      <div class="logo-mark">CS</div>
+      <div class="brand-copy">
+        <strong>Cardio Study Hub</strong>
+        <span>Pacemaker • Electrophysiology • English</span>
+      </div>
+    </button>
+
+    <div class="topbar-actions">
+      <button id="backButton" class="ghost-btn is-hidden" aria-label="Voltar">← Voltar</button>
+      <button id="themeToggle" class="icon-btn" aria-label="Alternar tema" title="Alternar tema">◐</button>
+    </div>
+  </header>
+
+  <div class="app-shell">
+    <aside id="sidebar" class="sidebar is-hidden">
+      <div class="sidebar-head">
+        <div>
+          <span class="eyebrow">Biblioteca</span>
+          <h2 id="sidebarTitle">Estudos</h2>
+        </div>
+      </div>
+
+      <div class="search-wrap">
+        <span class="search-icon">⌕</span>
+        <input id="searchInput" type="search" placeholder="Buscar nesta seção..." autocomplete="off" />
+      </div>
+
+      <nav id="sideNav" class="side-nav"></nav>
+    </aside>
+
+    <main id="content" class="content content-full"></main>
+  </div>
+
+  <footer>
+    <span>Cardio Study Hub</span>
+    <span>Biblioteca pessoal de estudos.</span>
+  </footer>
+
+  <script src="content.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
